@@ -1,0 +1,12 @@
+# spider configuration
+
+# 配置数据库
+[db_param]
+host=10.188.88.88
+database=pythondb
+user=xsl
+password=8888
+port=5432
+DBType=PostgreSQL
+
+
