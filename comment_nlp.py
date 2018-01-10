@@ -80,9 +80,9 @@ def snownlp(comment):
     plt.show()
 
 
-def follows(userlist):
+def follows(comment):
     logger.info('列出评论数')
-    userdict = Counter(userlist)
+    userdict = Counter(comment)
     logger.info(userdict.most_common(20))
 
 
@@ -94,7 +94,7 @@ if __name__ == '__main__':
             sina_list, comment_list, user_list = read_comment(conn)
             word_cloud(comment_list)
             snownlp(comment_list)
-            follows(user_list)
+            follows(comment_list)
     finally:
         if conn:
             conn.close()
